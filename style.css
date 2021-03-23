@@ -1,0 +1,375 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+}
+
+/* .container {
+    margin: 0 300px;
+}
+
+.searchbar {
+    text-align: left;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(gray, 90%, darkgray);
+}
+
+header > div.container > nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 120px;
+}
+
+header > div.container > nav > ul > li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+header > div.container > img {
+    float: right;
+    position: relative;
+    top: 25px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 150px;
+    z-index: 2;
+}
+
+.dropdown > div > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.dropdown > div > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+}
+
+.dropdown-content > ul > li {
+    padding: 5px 0;
+    border-bottom: 1px solid lightgray;
+} */
+
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 20px 250px;
+}
+
+body >.row:nth-child(2) {
+    width: 170px;
+}
+
+.row > .col {
+    position: relative;
+    padding: 0 5px;
+    margin: 0 10px;
+    z-index: 1;
+}
+
+.row > .col > div {
+    width: 250px;
+    position: absolute;
+    top: 70%;
+}
+
+.row > .col > img {
+    border-radius: 0 0 20px 0;
+}
+
+.row > .col > div {
+    background-image: url("images/hp_tab_text_bg.png");
+    background-repeat:no-repeat;
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    margin: 2px 10px;
+    padding: 10px 5px;
+}
+
+.row > .col > div > span > a {
+    color: white;
+}
+
+#promo-tab {
+    background-image: url("images/cube_bg.png");
+    background-repeat: no-repeat;
+    padding: 18px 5px;
+    margin: 0 5px;
+}
+
+#promo-tab > li > img {
+    display: block;
+}
+
+#promo-tab::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#promo-tab > a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 270px;
+    padding: 5px 15px;
+}
+
+#promo-tab > img {
+    float: left;
+}
+
+#promo-tab {
+    width: 300px;
+}
+
+#map {
+    height: 130px;
+}
+
+#read-more {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+}
+
+.row > .col > div > p {
+    text-align-last: left;
+}
+
+header {
+    position: relative;
+    height: 105px;
+}
+
+header > img {
+    position: relative;
+    top: 30%;
+    right: 20%;
+}
+
+header > div {
+    text-align: left;
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 25%;
+}
+
+header > div > img {
+    position: absolute;
+    top: 1px;
+}
+
+header > div > a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+header > div > input {
+    border-radius: 0 10px 0 0;
+    width: 150px;
+}
+
+header > div > a:hover, footer > ul > li > a:hover, .row > .col > div > a:hover, #promo-tab > a:hover, .col > div > span > a:hover, .dropdown > div > ul > li > a:hover {
+    color: #005CA0;
+}
+
+header > nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 70px 28%;
+    width: 100%;
+}
+
+header > nav >  ul > li {
+    display: inline;
+    padding: 0 10px;
+    border-left: 1px solid gray;
+}
+
+header > nav > ul > li:nth-child(1), header > nav > ul > li:nth-child(9) {
+    border-left: none;
+}
+
+header > nav > ul > li > a, footer > ul > li > a, .row > .col > div > a {
+    text-decoration: none;
+    color: white;
+}
+
+header > nav > ul > li > a:hover {
+    color: #005CA0;
+}
+
+footer {
+    text-align: center;
+    height: 38px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+}
+
+header, footer {
+    background-image: linear-gradient(to top, darkgray, gray);
+}
+
+footer > ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 10px;
+}
+
+footer > ul > li {
+    display: inline;
+    padding: 0 5px;
+    font-size: 14px;
+    border-left: 1px solid white;
+}
+
+footer > ul > li:nth-child(10), footer > ul > li:nth-child(11) {
+    border-left: none;
+    padding-left: 60px;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown > div > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.dropdown > div > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 150px;
+    z-index: 2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+}
+
+.dropdown-content > ul > li {
+    padding: 5px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+#container {
+    display: flex;
+}
+
+#container > .col:nth-of-type(1) {
+    flex-basis: 30%;
+    text-align: left;
+}
+
+#container > .col:nth-of-type(1) > p {
+    background-color: lightgray;
+    height: 50px;
+    margin-right: 440px;
+}
+
+#container > .col:nth-of-type(2) {
+    margin-top: 30px;
+    font-size: 14px;
+    margin-right: 30px;
+    flex-basis: 25%;
+    color: #72716d;
+}
+
+#form-container {
+    border: 1px solid black;
+    border-radius: 0 20px 0 0;
+    padding: 5px 5px;
+    width: 400px;
+    background-color: lightgray;
+}
+
+#form-container > button {
+    margin-right: 250px;
+    background-color: #00A0E8;
+    color: white;
+}
+
+#form-container > h4, #details > h4 {
+    color: #004DA1;
+}
+
+#details {
+    background-image: url("images/cube_bg.png");
+    background-repeat: no-repeat;
+    width: 300px;
+    font-size: 13px;
+    padding: 2px 15px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+#container > .col:nth-of-type(3) {
+    margin: 100px 20px;
+}
+
+#form-container > label {
+    display: inline-block;
+    width: 80px;
+}
+
+div.col > p > a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+#form-container > label, #form-container > input {
+    margin: 5px 0;
+}
