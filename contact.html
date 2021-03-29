@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>פז - צור קשר</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div>
-            <a href="#">English</a><input type="search" placeholder="רשום מילת חיפוש"><img src="images/search_button.png">
+        <div class="searchbar">
+            <a href="#">English</a>
+            <input type="search" placeholder="רשום מילת חיפוש">
+            <img src="images/search_button.png">
         </div>
 
         <nav>
+            <img src="images/paz_logo.png">
             <ul>
-                <li>
-                    <img src="images/paz_logo.png">
-                </li>
                 <li>
                     <a href="index.html"><img src="images/menu_home_blue.png"></a>
                 </li>
@@ -164,39 +164,39 @@
         </nav>
     </header>
 
-    <div id="container">
+    <main id="contact-main">
         <div class="col">
-            <p><a href="#">צור קשר</a></p>
+            <hr>
+            <a href="#">צור קשר</a>
         </div>
 
         <div class="col">
-            עמוד הבית > צור קשר
-            <p>
-                <b>צור קשר</b><hr>
-                <form>
-                    <div id="form-container">
-                        <h4>צור קשר</h4>
-                        <strong>ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</strong>
-                        <p>* השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
+            <p>עמוד הבית > צור קשר</p>
+            צור קשר<hr>
+            <form>
+                <h3>צור קשר</h3>
+                ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים<br>
+                ואנו נשמח לעמוד לרשותכם :<br>
+                <p>* השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
 
-                        <label for="fname">* שם פרטי</label>
-                        <input type="text" name="name"><br>
-                        <label for="lname">* שם משפחה</label>
-                        <input type="text" name="lame"><br>
-                        <label for="tel">* טלפון</label>
-                        <input type="tel" name="tel"><br>
-                        <label for="email">* Email</label>
-                        <input type="email" name="email">
-                        <textarea placeholder="תוכן הפנייה" cols="33" rows="7"></textarea><br>
-                        <button type="submit">שלח</button>
-                    </div>
-                </form>
-            </p>
+                <div>
+                    <label for="fname">* שם פרטי</label>
+                    <input type="text" name="name"><br>
+                    <label for="lname">* שם משפחה</label>
+                    <input type="text" name="lame"><br>
+                    <label for="tel">* טלפון</label>
+                    <input type="tel" name="tel"><br>
+                    <label for="email">* Email</label>
+                    <input type="email" name="email"><br>
+                    <textarea placeholder="תוכן הפנייה" cols="28" rows="7"></textarea><br>
+                    <button type="submit">שלח</button>
+                </div>
+            </form>
         </div>
 
         <div class="col">
             <div id="details">
-                <h4>פרטי יצירת קשר</h4>
+                <h3>פרטי יצירת קשר</h3>
                 פז חברת נפט בע"מ<br>
                 יורו פארק, בניין הולנד<br>
                 קיבוץ יקום 60972<br>
@@ -205,20 +205,18 @@
             </div>
 
             <div id="details">
-                <h4>עוד בפז</h4>
+                <h3>עוד בפז</h3>
                 ליצירת קשר עם דוברות פז<br>
                 <a href="#">לחצו כאן>></a><br>
                 רוצים לעבוד בפז?<br>
                 <a href="#">לחצו כאן>></a>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer>
+        <a href="#"><img src="images/fb_icon.png"></a>
         <ul>
-            <li>
-                <a href="#"><img src="images/fb_icon.png"></a>
-            </li>
             <li>
                 <a href="#">-</a>
             </li>
@@ -241,15 +239,13 @@
                 <a href="#">מפת אתר</a>
             </li>
             <li>
-                <a href="#">צור קשר</a>
+                <a href="contact.html">צור קשר</a>
             </li>
             <li>
                 <a href="#">הודעות והליכים משפטיים</a>
             </li>
-            <li>
-                <a href="#"><img src="images/white_logo.png"></a>
-            </li>
         </ul>
+        <a href="#"><img src="images/white_logo.png"></a>
     </footer>
 </body>
 </html>
